@@ -14,7 +14,7 @@ export function getCurrentWeather(city) {
     }
 
     if (!response.ok && response.status === 400) {
-      throw new Error("Bad request");
+      throw new Error("Enter correct city");
     }
 
     return response.json();
@@ -32,7 +32,7 @@ export function getDailyWeather(city) {
     }
 
     if (!response.ok && response.status === 400) {
-      throw new Error("Bad request");
+      throw new Error("Enter correct city");
     }
 
     return response.json();
